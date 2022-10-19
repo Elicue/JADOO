@@ -828,4 +828,134 @@ main .message .box .bas .send p {
   font-weight: 600;
   font-size: 17px;
   color: #fff;
+}
+main .footer {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+main .footer .haut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  height: 50%;
+}
+main .footer .haut .gauche {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 20%;
+  justify-content: space-between;
+}
+main .footer .haut .gauche h2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 44px;
+  color: #181E4B;
+}
+main .footer .haut .gauche p {
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 124.5%;
+  color: #5E6282;
+}
+main .footer .haut .mid {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 100%;
+  justify-content: space-between;
+}
+main .footer .haut .mid .cat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .footer .haut .mid .cat h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 21px;
+  color: #080809;
+}
+main .footer .haut .mid .cat .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .footer .haut .mid .cat .list a {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: #5E6282;
+  text-decoration: none;
+}
+main .footer .haut .droite {
+  height: 80%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .footer .haut .droite .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .footer .haut .droite .logos .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+}
+main .footer .haut .droite .logos .logo:nth-child(2) {
+  background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+}
+main .footer .haut .droite .discover h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.005em;
+  color: #5E6282;
+}
+main .footer .haut .droite .store {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 30%;
+  justify-content: space-between;
+}
+main .footer .haut .droite .store .app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #080809;
+  border-radius: 17.5px;
+  width: 40%;
+  height: 100%;
+}
+main .footer .bas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+main .footer .bas p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  color: #5E6282;
 }/*# sourceMappingURL=style.css.map */

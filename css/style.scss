@@ -1008,4 +1008,155 @@ main {
       }
     }
   }
+
+  .footer {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+
+    .haut {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+      height: 50%;
+
+      .gauche {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 20%;
+        justify-content: space-between;
+
+        h2 {
+          font-family: 'Poppins';
+          font-weight: 500;
+          font-size: 44px;
+          color: color(font-light);
+        }
+
+        p {
+          width: 100%;
+          font-family: 'Poppins';
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 124.5%;
+          color: color(font);
+        }
+      }
+
+      .mid {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        height: 100%;
+        justify-content: space-between;
+
+        .cat {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h3 {
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 21px;
+            color: color(noir);
+          }
+
+          .list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a {
+              font-family: 'Poppins';
+              font-weight: 500;
+              font-size: 18px;
+              color: color(font);
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .droite {
+        height: 80%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .logos {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 41px;
+            height: 41px;
+          }
+
+          .logo:nth-child(2) {
+            background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+          }
+        }
+
+        .discover {
+          h3 {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 0.005em;
+            color: color(font);
+          }
+        }
+
+        .store {
+          display: flex;
+          flex-direction: row;
+          width: 85%;
+          height: 30%;
+          justify-content: space-between;
+
+          .app {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background: #080809;
+            border-radius: 17.5px;
+            width: 40%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .bas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+
+      p {
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 14px;
+        color: color(font);
+      }
+    }
+  }
 }
