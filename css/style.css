@@ -7,12 +7,8 @@
   color: color(noir);
 }
 
-body {
-  height: 800vh;
-}
-
 .back {
-  position: absolute;
+  position: relative;
   height: 100%;
 }
 .back .forme {
@@ -87,6 +83,7 @@ main .first {
   width: 100%;
   height: 80vh;
   align-items: center;
+  position: relative;
 }
 main .first .txt {
   width: 50%;
@@ -107,10 +104,17 @@ main .first .txt .titre h1 {
   font-size: 84px;
   line-height: 89px;
 }
-main .first .txt .titre svg {
+main .first .txt .titre h1 span {
+  font-family: "Volkhov", serif;
+  color: #181E4B;
+  font-size: 84px;
+  line-height: 89px;
+  position: relative;
+}
+main .first .txt .titre h1 span svg {
   position: absolute;
-  left: 430px;
-  top: 330px;
+  left: 0%;
+  bottom: 0%;
   z-index: -1;
 }
 main .first .txt .content {
@@ -176,12 +180,12 @@ main .first .img {
 }
 main .first .img .plane:nth-child(1) {
   position: absolute;
-  margin-top: 50px;
+  top: 10%;
 }
 main .first .img .plane:nth-child(2) {
   position: absolute;
-  margin-top: 150px;
-  margin-left: 450px;
+  top: 30%;
+  right: 3%;
   z-index: -1;
 }
 main .first .img .fond {
@@ -191,7 +195,7 @@ main .first .img .fond {
 }
 main .first .img .fond svg {
   width: 105%;
-  margin-left: -100px;
+  margin-left: -15%;
 }
 main .category {
   display: flex;
@@ -204,7 +208,7 @@ main .category {
 }
 main .category .fond {
   position: absolute;
-  right: 50px;
+  right: 3%;
 }
 main .category .titre {
   display: flex;
@@ -232,6 +236,7 @@ main .category .content {
   width: 100%;
 }
 main .category .content .card {
+  position: relative;
   background: #fff;
   border-radius: 36px;
   display: flex;
@@ -243,6 +248,9 @@ main .category .content .card {
 }
 main .category .content .card .fond {
   display: none;
+  z-index: -1;
+  bottom: -40px;
+  left: -40px;
 }
 main .category .content .card .icone {
   height: 40%;
@@ -273,30 +281,6 @@ main .category .content .card .content p {
   width: 75%;
   margin: auto;
 }
-main .category .content .card:nth-child(1) .fond {
-  position: absolute;
-  margin-top: 300px;
-  left: 100px;
-  z-index: -1;
-}
-main .category .content .card:nth-child(2) .fond {
-  position: absolute;
-  margin-top: 300px;
-  left: 420px;
-  z-index: -1;
-}
-main .category .content .card:nth-child(3) .fond {
-  position: absolute;
-  margin-top: 300px;
-  left: 740px;
-  z-index: -1;
-}
-main .category .content .card:nth-child(4) .fond {
-  position: absolute;
-  margin-top: 300px;
-  right: 340px;
-  z-index: -1;
-}
 main .category .content .card:hover {
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 }
@@ -313,8 +297,8 @@ main .destinations {
 }
 main .destinations .fond {
   position: absolute;
-  right: 90px;
-  margin-top: 400px;
+  right: 7%;
+  margin-top: 25%;
 }
 main .destinations .titre {
   display: flex;
@@ -345,7 +329,7 @@ main .destinations .content {
   height: 70%;
 }
 main .destinations .content .card {
-  width: 315px;
+  width: 25%;
   height: 100%;
   border-radius: 24px;
   background: #fff;
@@ -408,9 +392,9 @@ main .booking {
 }
 main .booking .fond {
   position: absolute;
-  right: 70px;
+  right: 5%;
   z-index: -1;
-  margin-top: -150px;
+  margin-top: -10%;
 }
 main .booking .txt {
   display: flex;
@@ -534,8 +518,8 @@ main .booking .card .large .content .desc .left {
 }
 main .booking .card .smoll {
   position: absolute;
-  right: 130px;
-  margin-top: 150px;
+  right: 10%;
+  margin-top: 10%;
   background: #FFFFFF;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 18px;
@@ -582,7 +566,7 @@ main .booking .card .smoll .content p span {
   color: #080809;
 }
 main .comment {
-  width: 100%;
+  width: 105%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -593,11 +577,11 @@ main .comment .left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
   height: 100%;
 }
 main .comment .left .titre {
-  width: 90%;
+  width: 70%;
 }
 main .comment .left .titre h3 {
   font-family: "Poppins";
@@ -631,10 +615,12 @@ main .comment .left .select span:nth-child(1) {
 main .comment .right {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 60%;
+  position: relative;
+  justify-content: space-between;
 }
 main .comment .right .card {
-  width: 90%;
+  width: 80%;
   height: 100%;
 }
 main .comment .right .card .large {
@@ -643,10 +629,12 @@ main .comment .right .card .large {
   background: #FFFFFF;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 10px;
+  position: relative;
 }
 main .comment .right .card .large .pic {
   position: absolute;
-  margin: -35px 0 0 -35px;
+  top: -10%;
+  left: -4%;
 }
 main .comment .right .card .large .content {
   margin: auto;
@@ -683,9 +671,10 @@ main .comment .right .card .large .content .bas p {
 }
 main .comment .right .card .large:nth-child(2) {
   position: relative;
-  margin-top: -190px;
+  margin-top: -28%;
   margin-left: 50px;
   z-index: -1;
+  border: 2px solid #F7F7F7;
 }
 main .comment .right .select {
   display: flex;
@@ -693,8 +682,12 @@ main .comment .right .select {
   height: 50%;
   margin: auto;
   justify-content: space-around;
+  position: relative;
+  margin-right: 0;
 }
 main .comment .right .select ion-icon {
+  width: 35px;
+  height: 35px;
   color: #181E4B;
 }
 main .comment .right .select ion-icon:nth-child(1) {
@@ -734,34 +727,26 @@ main .message {
   background-color: rgba(223, 215, 249, 0.2);
   border-radius: 129px 20px 20px 20px;
   height: 407px;
+  position: relative;
 }
-main .message .back {
-  position: absolute;
-  right: 50px;
-  margin-top: 310px;
-}
-main .message .fond {
-  position: absolute;
-  display: flex;
-}
-main .message .fond img {
+main .message img {
   position: absolute;
 }
-main .message .fond img:nth-child(1) {
-  margin-left: 934px;
+main .message img:nth-child(1) {
+  right: 0;
 }
-main .message .fond img:nth-child(2) {
-  top: 0;
-  margin-top: 45px;
+main .message img:nth-child(2) {
+  left: 0;
+  bottom: 0;
 }
 main .message .cta {
+  top: -5%;
+  right: -15%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 70px;
   height: 70px;
-  right: 130px;
-  margin-top: -30px;
   position: absolute;
   border-radius: 50%;
   background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
@@ -776,6 +761,12 @@ main .message .box {
   justify-content: space-around;
   height: 100%;
   z-index: 1;
+  position: relative;
+}
+main .message .box .back {
+  position: absolute;
+  right: -25%;
+  top: 85%;
 }
 main .message .box .titre {
   text-align: center;
