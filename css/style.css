@@ -1,1 +1,952 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@600&family=Poppins:wght@500;600;700&family=Tangerine:wght@400;700&family=Volkhov:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: color(noir);
+}
+
+.back {
+  position: relative;
+  height: 100%;
+}
+.back .forme {
+  position: absolute;
+  z-index: -5;
+  right: 0;
+  top: 0;
+}
+.back .cercle {
+  position: absolute;
+  z-index: -1;
+}
+.back .rond {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 15vh;
+  background-color: transparent;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+header .menu {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+header .menu ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+header .menu ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+header .menu ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #212832;
+  align-items: center;
+}
+header .menu ul li:nth-child(6) {
+  border: #080809 1px solid;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+main .first {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  position: relative;
+}
+main .first .txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
+main .first .txt .destination h3 {
+  text-transform: uppercase;
+  color: #DF6951;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+main .first .txt .titre h1 {
+  font-family: "Volkhov", serif;
+  color: #181E4B;
+  font-size: 84px;
+  line-height: 89px;
+}
+main .first .txt .titre h1 span {
+  font-family: "Volkhov", serif;
+  color: #181E4B;
+  font-size: 84px;
+  line-height: 89px;
+  position: relative;
+}
+main .first .txt .titre h1 span svg {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: -1;
+}
+main .first .txt .content {
+  width: 70%;
+}
+main .first .txt .content p {
+  font-family: "Poppins";
+  color: #5E6282;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+}
+main .first .txt .cta {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+}
+main .first .txt .cta button:nth-child(1) {
+  background-color: #F1A501;
+  font-family: "Poppins";
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  width: 40%;
+  cursor: pointer;
+}
+main .first .txt .cta button:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins";
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #5E6282;
+  width: 40%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+main .first .txt .cta button:nth-child(2) .play {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  background-color: #DF6951;
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+  align-items: center;
+  justify-content: center;
+}
+main .first .txt .cta button:nth-child(2) .play ion-icon {
+  color: #fff;
+  width: 60%;
+  height: 60%;
+  margin-left: 5px;
+}
+main .first .img {
+  width: 50%;
+}
+main .first .img .plane:nth-child(1) {
+  position: absolute;
+  top: 10%;
+}
+main .first .img .plane:nth-child(2) {
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  z-index: -1;
+}
+main .first .img .fond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .first .img .fond svg {
+  width: 105%;
+  margin-left: -15%;
+}
+main .category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+main .category .fond {
+  position: absolute;
+  right: 3%;
+}
+main .category .titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .category .titre h3 {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #5E6282;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main .category .titre h2 {
+  font-family: "Volkhov";
+  color: #181E4B;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+main .category .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+main .category .content .card {
+  position: relative;
+  background: #fff;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 314px;
+  width: 250px;
+  justify-content: space-around;
+}
+main .category .content .card .fond {
+  display: none;
+  z-index: -1;
+  bottom: -40px;
+  left: -40px;
+}
+main .category .content .card .icone {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .category .content .card .content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  height: 50%;
+}
+main .category .content .card .content h3 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #181E4B;
+}
+main .category .content .card .content p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 26px;
+  color: #5E6282;
+  font-weight: 500;
+  width: 75%;
+  margin: auto;
+}
+main .category .content .card:hover {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+main .category .content .card:hover .fond {
+  display: flex;
+}
+main .destinations {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 170px;
+  height: 80vh;
+  justify-content: space-between;
+}
+main .destinations .fond {
+  position: absolute;
+  right: 7%;
+  margin-top: 25%;
+}
+main .destinations .titre {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 20%;
+}
+main .destinations .titre h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #5E6282;
+}
+main .destinations .titre h2 {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #181E4B;
+}
+main .destinations .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70%;
+}
+main .destinations .content .card {
+  width: 25%;
+  height: 100%;
+  border-radius: 24px;
+  background: #fff;
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+main .destinations .content .card .img {
+  width: 100%;
+  height: 70%;
+}
+main .destinations .content .card .txt {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  height: 25%;
+}
+main .destinations .content .card .txt .haut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: #5E6282;
+}
+main .destinations .content .card .txt .bas {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #5E6282;
+}
+main .destinations .content .card:nth-child(1) .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/pic_1.jpeg);
+}
+main .destinations .content .card:nth-child(2) .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/pic_2.jpg);
+}
+main .destinations .content .card:nth-child(3) .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/pic_3.jpeg);
+}
+main .booking {
+  margin-top: 170px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70vh;
+}
+main .booking .fond {
+  position: absolute;
+  right: 5%;
+  z-index: -1;
+  margin-top: -10%;
+}
+main .booking .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+main .booking .txt .titre {
+  display: flex;
+  flex-direction: column;
+}
+main .booking .txt .titre h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #5E6282;
+}
+main .booking .txt .titre h2 {
+  font-family: "Volkhov";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #181E4B;
+  width: 90%;
+}
+main .booking .txt .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  width: 100%;
+}
+main .booking .txt .content .cat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+main .booking .txt .content .cat .txt {
+  width: 80%;
+}
+main .booking .txt .content .cat .txt h4 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  color: #5E6282;
+}
+main .booking .txt .content .cat .txt p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #5E6282;
+}
+main .booking .card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .booking .card .large {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 26px;
+  width: 60%;
+  align-items: center;
+  height: 65%;
+}
+main .booking .card .large .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  height: 100%;
+}
+main .booking .card .large .content .title {
+  display: flex;
+  flex-direction: column;
+}
+main .booking .card .large .content .title h4 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: #080809;
+}
+main .booking .card .large .content .title p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #84829A;
+}
+main .booking .card .large .content .logos {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+}
+main .booking .card .large .content .desc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+main .booking .card .large .content .desc .left {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #84829A;
+  justify-content: space-between;
+  width: 45%;
+}
+main .booking .card .smoll {
+  position: absolute;
+  right: 10%;
+  margin-top: 10%;
+  background: #FFFFFF;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  width: 18%;
+  height: 15%;
+}
+main .booking .card .smoll .img {
+  width: 30%;
+  margin: auto;
+  margin-top: 10px;
+}
+main .booking .card .smoll .img img {
+  border-radius: 50%;
+}
+main .booking .card .smoll .content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: -30px;
+  height: 90%;
+}
+main .booking .card .smoll .content h4 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  color: #84829A;
+}
+main .booking .card .smoll .content h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: #080809;
+}
+main .booking .card .smoll .content p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  color: #8A79DF;
+}
+main .booking .card .smoll .content p span {
+  color: #080809;
+}
+main .comment {
+  width: 105%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 250px;
+  height: 35vh;
+}
+main .comment .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+}
+main .comment .left .titre {
+  width: 70%;
+}
+main .comment .left .titre h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #5E6282;
+}
+main .comment .left .titre h2 {
+  font-family: "Volkhov";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #181E4B;
+}
+main .comment .left .select {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .comment .left .select span {
+  width: 12px;
+  height: 12px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+main .comment .left .select span:nth-child(1) {
+  background-color: #181E4B;
+}
+main .comment .right {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  position: relative;
+  justify-content: space-between;
+}
+main .comment .right .card {
+  width: 80%;
+  height: 100%;
+}
+main .comment .right .card .large {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 10px;
+  position: relative;
+}
+main .comment .right .card .large .pic {
+  position: absolute;
+  top: -10%;
+  left: -4%;
+}
+main .comment .right .card .large .content {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .comment .right .card .large .content .haut {
+  width: 70%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #5E6282;
+}
+main .comment .right .card .large .content .bas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%;
+  color: #5E6282;
+  font-family: "Poppins";
+}
+main .comment .right .card .large .content .bas h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+main .comment .right .card .large .content .bas p {
+  font-weight: 500;
+  font-size: 14px;
+}
+main .comment .right .card .large:nth-child(2) {
+  position: relative;
+  margin-top: -28%;
+  margin-left: 50px;
+  z-index: -1;
+  border: 2px solid #F7F7F7;
+}
+main .comment .right .select {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin: auto;
+  justify-content: space-around;
+  position: relative;
+  margin-right: 0;
+}
+main .comment .right .select ion-icon {
+  width: 35px;
+  height: 35px;
+  color: #181E4B;
+}
+main .comment .right .select ion-icon:nth-child(1) {
+  color: #84829A;
+}
+main .boites {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+main .boites .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 17%;
+  height: 86px;
+}
+main .boites .logo img {
+  filter: grayscale(100%);
+}
+main .boites .logo:hover {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+main .boites .logo:hover img {
+  filter: grayscale(0%);
+}
+main .message {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(223, 215, 249, 0.2);
+  border-radius: 129px 20px 20px 20px;
+  height: 407px;
+  position: relative;
+}
+main .message img {
+  position: absolute;
+}
+main .message img:nth-child(1) {
+  right: 0;
+}
+main .message img:nth-child(2) {
+  left: 0;
+  bottom: 0;
+}
+main .message .cta {
+  top: -5%;
+  right: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
+}
+main .message .box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+main .message .box .back {
+  position: absolute;
+  right: -25%;
+  top: 85%;
+}
+main .message .box .titre {
+  text-align: center;
+}
+main .message .box .titre h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 54px;
+  color: #5E6282;
+}
+main .message .box .bas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+main .message .box .bas .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 70%;
+}
+main .message .box .bas .content .input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  padding: 1rem;
+}
+main .message .box .bas .content .input p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #181E4B;
+}
+main .message .box .bas .send {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  border-radius: 10px;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+main .message .box .bas .send p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 17px;
+  color: #fff;
+}
+main .footer {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+main .footer .haut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  height: 50%;
+}
+main .footer .haut .gauche {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 20%;
+  justify-content: space-between;
+}
+main .footer .haut .gauche h2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 44px;
+  color: #181E4B;
+}
+main .footer .haut .gauche p {
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 124.5%;
+  color: #5E6282;
+}
+main .footer .haut .mid {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 100%;
+  justify-content: space-between;
+}
+main .footer .haut .mid .cat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .footer .haut .mid .cat h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 21px;
+  color: #080809;
+}
+main .footer .haut .mid .cat .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .footer .haut .mid .cat .list a {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: #5E6282;
+  text-decoration: none;
+}
+main .footer .haut .droite {
+  height: 80%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .footer .haut .droite .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .footer .haut .droite .logos .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+}
+main .footer .haut .droite .logos .logo:nth-child(2) {
+  background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+}
+main .footer .haut .droite .discover h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.005em;
+  color: #5E6282;
+}
+main .footer .haut .droite .store {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 30%;
+  justify-content: space-between;
+}
+main .footer .haut .droite .store .app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #080809;
+  border-radius: 17.5px;
+  width: 40%;
+  height: 100%;
+}
+main .footer .bas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+main .footer .bas p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  color: #5E6282;
+}/*# sourceMappingURL=style.css.map */
